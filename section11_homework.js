@@ -1,15 +1,15 @@
 var name = prompt("名前を入力してください");
 var num;
 var numbers = [];
-var popin = [];
+var pops = [];
 var sum_number;
 
 function sum(numbers){
   var sum = 0;
   var length = numbers.length;
   for(var i = 0; i < length; i++){
-    popin.push(numbers.pop());
-    sum += popin[i];
+    pops.push(numbers.pop());
+    sum += pops[i];
   }
   return sum;
 }
