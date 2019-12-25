@@ -5,7 +5,7 @@ var pops = [];
 var sum_number;
 
 function input_work(){
-  name = prompt("
+  name = prompt("名前を入力してください");
   while(num != "q"){
     num = prompt("数字を入力してください");
     numbers.push(Number(num));
