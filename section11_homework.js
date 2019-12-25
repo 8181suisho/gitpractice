@@ -1,8 +1,19 @@
-var name = prompt("名前を入力してください");
+var name;
 var num;
 var numbers = [];
 var pops = [];
 var sum_number;
+
+function input_work(){
+  name = prompt("
+  while(num != "q"){
+    num = prompt("数字を入力してください");
+    numbers.push(Number(num));
+  }
+
+  numbers.pop();
+  alert("input => " + name + "," + " 配列 = " + "[" + numbers + "]");
+}
 
 function sum(numbers){
   var sum = 0;
@@ -16,14 +27,9 @@ function sum(numbers){
 
 
 
-while(num != "q"){
-  num = prompt("数字を入力してください");
-  numbers.push(Number(num));
-}
-
-numbers.pop();
-alert("input => " + name + "," + " 配列 = " + "[" + numbers + "]");
+input_work();
 const startTime = performance.now();
 sum_number = sum(numbers);
 const endTime = performance.now();
+
 alert("name : " + name + "," + " sum : " + sum_number + "," + " 配列 : " + "[" + numbers + "]" + "," + " time : " + (endTime - startTime) + "ms");
